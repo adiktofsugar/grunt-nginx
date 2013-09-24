@@ -1,0 +1,37 @@
+{
+  "name": "grunt-nginx",
+  "description": "Grunt-Nginx Description here",
+  "version": "0.1.0",
+  "homepage": "https://github.com/alexcurtis/grunt-nginx",
+  "author": {
+    "name": "Alex Curtis",
+    "email": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexcurtis/grunt-nginx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexcurtis/grunt-nginx/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/alexcurtis/grunt-nginx/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "grunt.js",
+  "bin": "bin/grunt-nginx",
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
