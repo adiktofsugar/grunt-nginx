@@ -6,13 +6,12 @@ module.exports = function(grunt) {
   grunt.initConfig({
     nginx: {
       options: {
-        config: 'config_file',
-        prefix: 'prefix_file'
+        config: 'conf_file',
+        prefix: 'prefix_path'
         test: false,
         globals: ['pid /var/run/nginx.pid', 'worker_processes 2']
       }
     }
-
   });
 
   // Load local tasks.

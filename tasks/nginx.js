@@ -32,8 +32,6 @@ module.exports = function(grunt) {
             args: args,
             opts: { stdio: 'inherit' }
         };
-        console.log(args);
-
         grunt.util.spawn(options, function(err, result){
             if(err) throw err;
             success(result);
