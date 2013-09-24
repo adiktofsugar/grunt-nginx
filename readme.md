@@ -1,7 +1,7 @@
 grunt-nginx 
 =============
 
-> grunt task for [Nginx](http://wiki.nginx.org/Main) to start, stop and restart a server.
+> Grunt task for [Nginx](http://wiki.nginx.org/Main) to start, stop and restart a server.
 
 ## Getting Started
 Install the plugin with this command:

@@ -1,6 +1,6 @@
 {
   "name": "grunt-nginx",
-  "description": "Grunt-Nginx Description here",
+  "description": "Grunt task for Nginx to start, stop and restart a server.",
   "version": "0.1.0",
   "homepage": "https://github.com/alexcurtis/grunt-nginx",
   "author": {
@@ -20,18 +20,16 @@
       "url": "https://github.com/alexcurtis/grunt-nginx/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "grunt.js",
   "bin": "bin/grunt-nginx",
   "engines": {
     "node": "*"
   },
   "scripts": {
-    "test": "grunt test"
   },
   "devDependencies": {
     "grunt": "~0.4.1"
   },
   "keywords": [
-    "gruntplugin"
+    "gruntplugin", "nginx", "nginx-server"
   ]
 }
