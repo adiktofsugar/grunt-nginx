@@ -1,7 +1,7 @@
 {
   "name": "grunt-nginx",
   "description": "Grunt task for Nginx to start, stop and restart a server.",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/alexcurtis/grunt-nginx",
   "author": {
     "name": "Alex Curtis",

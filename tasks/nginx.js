@@ -48,7 +48,7 @@ module.exports = function(grunt) {
         });
     };
 
-    grunt.registerTask( 'nginx', 'blah blah blah', function(target) {
+    grunt.registerTask('nginx', 'Controls a Nginx Server', function(target){
 
         // Merge With Defaults
         var options = this.options({
