@@ -31,29 +31,34 @@ These are all self-explanatory.
 
 ### Options
 
-#### config ```string```
+#### config ```string``` - required
 
 Specify which configuration file Nginx should use instead of the default.
 
-#### prefix ```string```
+#### prefix ```string``` - optional
 
 Sets the prefix path (default: /usr/local/nginx/). Any references in the config file will be relative to this path.
 
-#### globals ```string```
+#### globals ```string``` - optional
 
 Sets global directives. Further Information can be found [here](http://wiki.nginx.org/NginxMainModule).
 
-#### test ```string```
+#### test ```string``` - optional
 
 Don't run, just test the configuration file. Nginx checks configuration for correct syntax and then try to open files referred in configuration.
+
+### Paths
+grunt-nginx supports both absolute and relative paths. Like most grunt plugins, relative paths are with respect to the `Gruntfile.js` gruntfile. 
+
+
 
 ### Example
 
 ```javascript
 nginx: {
     options: {
-        config: '/home/alex/nginx.conf',
-        prefix: '/home/alex/nginx'
+        config: '/path/to/nginx.conf',
+        prefix: './relative/path/nginx'
         globals: ['pid /var/run/nginx.pid', 'worker_processes 2']
     }
 }

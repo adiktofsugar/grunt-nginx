@@ -1,5 +1,7 @@
 'use strict';
 
+var path = require('path');
+
 module.exports = function(grunt) {
 
     var warning = function(target){
@@ -11,11 +13,18 @@ module.exports = function(grunt) {
         grunt.log.ok(result);
     };
 
+    var fullpath = function(p, type, required){
+        var fp = path.resolve(p);
+        if(grunt.file.exists(fp) || !required) { return fp; }
+        var error = ' (' + type + ' path): is required, but invalid.'
+        throw fp + error;
+    };
+
     var argument = function(options){
         var args = [];
         if(options.signal) { args.push('-s'); args.push(options.signal); }
-        if(options.config) { args.push('-c'); args.push(options.config); }
-        if(options.prefix) { args.push('-p'); args.push(options.prefix); }
+        if(options.config) { args.push('-c'); args.push(fullpath(options.config, 'config', true)); }
+        if(options.prefix) { args.push('-p'); args.push(fullpath(options.prefix, 'prefix')); }
         var globals = options.globals;
         if(globals){
             args.push('-g');

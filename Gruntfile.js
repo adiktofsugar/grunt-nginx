@@ -6,10 +6,10 @@ module.exports = function(grunt) {
   grunt.initConfig({
     nginx: {
       options: {
-        config: 'conf_file',
-        prefix: 'prefix_path'
-        test: false,
-        globals: ['pid /var/run/nginx.pid', 'worker_processes 2']
+        config: '../../quaneo/dev/qgp-portal/nginx/nginx.conf',
+        prefix: '../../nginx/'
+        // test: false,
+        // globals: ['pid /var/run/nginx.pid', 'worker_processes 2']
       }
     }
   });
