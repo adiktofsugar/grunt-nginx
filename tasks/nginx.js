@@ -36,6 +36,10 @@ module.exports = function(grunt) {
 
     var spawn = function(command, options, done){
         var args = argument(options);
+        if (options.useSudo) {
+            args.unshift(command);
+            command = "sudo";
+        }
         var options = {
             cmd: command,
             args: args,

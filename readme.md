@@ -47,6 +47,10 @@ Sets global directives. Further Information can be found [here](http://wiki.ngin
 
 Don't run, just test the configuration file. Nginx checks configuration for correct syntax and then try to open files referred in configuration.
 
+#### useSudo ```boolean``` - optional
+
+Runs nginx with sudo. Useful if you want to run it on port 80.
+
 ### Paths
 grunt-nginx supports both absolute and relative paths. Like most grunt plugins, relative paths are with respect to the `Gruntfile.js` gruntfile. 
 
